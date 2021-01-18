@@ -17,13 +17,13 @@ export const Button = ({
 }) => {
   //button gets styles, Size, and Color and if not, it automatically defaults back to the 'primary' of each of them.
   const checkButtonStyle = STYLES.includes(buttonStyle) ? 
-  buttonStyle : STYLES[0] 
+  buttonStyle : STYLES[0];
 
-  const checkButtonSize = STYLES.includes(buttonSize) ? 
-  buttonSize : SIZES[0] 
+  const checkButtonSize = SIZES.includes(buttonSize) ? 
+  buttonSize : SIZES[0];
 
-  const checkButtonColor = STYLES.includes(buttonColor) ? 
-  buttonColor : COLOR[0]
+  const checkButtonColor = COLOR.includes(buttonColor) ? 
+  buttonColor : null;
 
   return (
     <button className={
